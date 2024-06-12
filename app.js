@@ -31,8 +31,8 @@ const mongoSanitize = require('express-mongo-sanitize');
 
 // npm install multer@1.4.5-lts.1
 
-// const dbUrl = process.env.DB_URL;
-const dbUrl = 'mongodb://localhost:27017/yelp-camp';
+const dbUrl = process.env.DB_URL;
+// const dbUrl = 'mongodb://localhost:27017/yelp-camp';
 
 const store = mongoStore.create({
     mongoUrl: dbUrl,
